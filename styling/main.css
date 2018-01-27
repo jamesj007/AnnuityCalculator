@@ -1,0 +1,29 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5C6C6;
+}
+
+#header {
+    padding: 13px 20px;
+}
+
+#app-name{
+    font-size: 29px;
+}
+
+
+#calc-elements {
+    padding: 20px;
+}
+
+#output {
+    border: none;
+    color: #F55D5D;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px;
+}
+
+#button-place {
+    padding:10px;
+}

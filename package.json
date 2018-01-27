@@ -1,0 +1,14 @@
+{
+  "name": "annuity-calc",
+  "version": "1.0.0",
+  "description": "Annuity calculator made with Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Jovin James",
+  "license": "ISC"
+}

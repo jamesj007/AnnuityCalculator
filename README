@@ -1,0 +1,5 @@
+## Annuity Calculator 
+
+Simple annuity calculator that calculates a future and present value of an annuity based on number of years, interest rate,
+and annual payment. It was made as part of an Honors Contract for a finance class at ASU. The calculator was made
+with Electron and uses BootStrap for styling.

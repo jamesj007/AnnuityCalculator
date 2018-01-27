@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styling/main.css" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Savings Calculator</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="card rounded-0 border border-danger text-white bg-dark">
+        <div class="card-body">
+          <h5 id="app-name" class="card-title font-weight-bold">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="calc-elements">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card rounded-0 border border-danger text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <div class="row py-2" >
+                      <div class="col-sm-6">Initial Amount($)</div>
+                      <div class="col"><input type="number" value="0" ></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Interest Rate(%)</div>
+                      <div class="col"><input type="number" value="0"></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Number of Years</div>
+                      <div class="col"><input type="number" value="0"></div>
+                  </div>
+                  <div class="text-center" id="button-place"> 
+                      <button id="singlebutton" name="singlebutton" class="btn btn-danger">Calculate</button> 
+                  </div>
+                  <div id="output_panel">
+                      <div id="output">TEXT GOES HERE</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card rounded-0 border border-danger text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <div class="row py-2" >
+                      <div class="col-sm-6">Initial Amount($)</div>
+                      <div class="col"><input type="number" value="0" ></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Interest Rate(%)</div>
+                      <div class="col"><input type="number" value="0"></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Number of Years</div>
+                      <div class="col"><input type="number" value="0"></div>
+                  </div>
+                  <div class="text-center" id="button-place"> 
+                      <button id="singlebutton" name="singlebutton" class="btn btn-danger">Calculate</button> 
+                  </div>
+                  <div id="output_panel">
+                      <div id="output">TEXT GOES HERE</div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script src="../scripts/renderer.js"></script>
+    
+  </body>
+</html>
