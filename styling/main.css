@@ -1,6 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    background-color: #F5C6C6;
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(255, 160, 160);
 }
 
 #header {
@@ -14,14 +14,27 @@ body {
 
 #calc-elements {
     padding: 20px;
+    margin-top: 10px;
 }
 
-#output {
+.output {
     border: none;
     color: #F55D5D;
     font-size: 25px;
     text-align: center;
     margin: 10px;
+}
+
+#output_final {
+    border: none;
+    color: #F55D5D;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+#additional-info {
+    margin-top: 10px;
 }
 
 #button-place {
