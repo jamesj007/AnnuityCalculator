@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styling/main.css" type="text/css" >
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <title>Annuity Calculator</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="card rounded-0 border border-danger text-white bg-dark">
+        <div class="card-body">
+          <h5 id="app-name" class="card-title font-weight-bold">Annuity Calculator</h5>
+          <p class="card-text">
+            Simple calculator that will calculate how much retirement money you will have based on yearly deposits for a certain 
+            number of years at a specific interest rate. Based on the retirement money, interest rate after retirement, and number of years
+            after retirement, the calculator will return how much you can withdraw yearly after retirement. <br> <br> You can also individually 
+            calculate the future value of an annuity and the present value of an annuity.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="calc-elements">
+        <div class="row">
+            <div class="col">
+              <div class="card rounded-0 border border-danger text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Retirement Savings Calculator</h5>
+                  <p class="card-text">Calculate retirement savings and how much money you can take out based on life expectancy.</p>
+                  <div class="row py-2" >
+                      <div class="col-sm-6">Annual Payment($)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0" ></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Interest Rate(%)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Number of Years</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                 <div>
+                      <div id="retireFuture" class="output" class="font-weight-bold">RETIREMENT SAVINGS</div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Interest Rate after Retirement(%)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6"># of Years after Retirement</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="text-center" id="button-place"> 
+                      <button id="singlebutton" onclick="calcRetirementSavings()" name="singlebutton" class="btn btn-danger">Calculate</button> 
+                  </div>
+                  <div>
+                      <div id="output_final" class="font-weight-bold">TEXT GOES HERE</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row" id="additional-info">
+            <div class="col-sm-6">
+              <div class="card rounded-0 border border-danger text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Future Value of an Annuity</h5>
+                  <p class="card-text">Calculate future value of an annuity for a specific number of years at a specific interest rate</p>
+                  <div class="row py-2" >
+                      <div class="col-sm-6">Annuity($)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0" ></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Interest Rate(%)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Number of Years</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="text-center" id="button-place"> 
+                      <button id="singlebutton" onclick="futureValueA()" name="singlebutton" class="btn btn-danger">Calculate</button> 
+                  </div>
+                  <div>
+                      <div id="outputFV" class="output" class="font-weight-bold">TEXT GOES HERE</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card rounded-0 border border-danger text-white bg-dark">
+                <div class="card-body">
+                  <h5 class="card-title">Present value of an Annuity</h5>
+                  <p class="card-text">Calculate present value of an annuity for a certain number of years at a specific interest rate</p>
+                  <div class="row py-2" >
+                      <div class="col-sm-6">Annuity($)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0" ></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Interest Rate(%)</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="row py-2">
+                      <div class="col-sm-6">Number of Years</div>
+                      <div class="col"><input class="inputNum" type="number" value="0"></div>
+                  </div>
+                  <div class="text-center" id="button-place"> 
+                      <button id="singlebutton" onclick="presentValueA()" name="singlebutton" class="btn btn-danger">Calculate</button> 
+                  </div>
+                  <div>
+                      <div id="outputPV" class="output" class="font-weight-bold">TEXT GOES HERE</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/renderer.js"></script>
+    
+  </body>
+</html>
