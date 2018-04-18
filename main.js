@@ -10,7 +10,7 @@ const path = require('path')
 const url = require('url')
 
 // set environemnt
-process.env.NODE_ENV = 'production';
+//process.env.NODE_ENV = 'production';
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.

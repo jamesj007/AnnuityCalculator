@@ -1,20 +1,22 @@
 body {
     font-family: 'Roboto Mono', monospace;
     background-color: rgb(255, 160, 160);
+    font-size: 13px;
 }
 
 #header {
-    padding: 13px 20px;
+    padding: 10px 20px;
+    font-size: 13px;
 }
 
 #app-name{
-    font-size: 29px;
+    font-size: 20px;
 }
 
 
 #calc-elements {
-    padding: 20px;
-    margin-top: 10px;
+    padding: 0px 20px;
+    padding-bottom: 15px;
 }
 
 .output {

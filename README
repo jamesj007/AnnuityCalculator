@@ -3,3 +3,7 @@
 Simple annuity calculator that calculates a future and present value of an annuity based on number of years, interest rate,
 and annual payment. It was made as part of an Honors Contract for a finance class at ASU. The calculator was made
 with Electron and uses BootStrap for styling.
+
+One of the main things you can do here is calculate how much you can take out annually from your retirement savings at a certain 
+interest rate for a specified number of years. The amount of money you would have at retirement is calculated via FVIFA and then how much you can
+take out annually after retirement is calculated via PVIFA.
